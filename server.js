@@ -52,8 +52,11 @@ const RESTAURANT = {
   
 
 app.get('/', (req,res) => {
-    res.send('The server is running!');
+    res.render('home.ejs', {
+        restaurant: RESTAURANT
+      });
 });
+
 
 
 
