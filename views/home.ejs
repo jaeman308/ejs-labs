@@ -1,3 +1,4 @@
+<%- include('./partials/nav') %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,11 +7,11 @@
   <title><%= restaurant.name%></title>
 </head>
 <body>
-  <h1>Home Page</h1>
+<h1>Home Page</h1>
   <ul>
-    <%= restaurant.name%>
-    <%= restaurant.address%>
-    <%= restaurant.phone%>
+    <li><%= restaurant.name%></li>
+    <li><%= restaurant.address%></li>
+    <li><%= restaurant.phone%></li>
    </ul>
    <% if(restaurant.isOpen === true) { %>
     <p>Yes we are open!</p>
